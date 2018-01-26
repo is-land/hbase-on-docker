@@ -1,4 +1,4 @@
-version: "2.0"
+version: "2"
 services:
   baseeenv:
     env_file:
@@ -45,4 +45,4 @@ services:
       - "2122"
       - "2181"
   slave:
-extends: baseeenv
+    extends: baseeenv
