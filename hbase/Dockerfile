@@ -5,7 +5,7 @@ MAINTAINER mathstana <stana@is-land.com.tw>
 ARG HBASE_VERSION=
 
 #Download hbase, and tar gz file to /opt/hbase
-RUN https://dist.apache.org/repos/dist/dev/hbase/hbase-1.4.1RC0/hbase-1.4.1-bin.tar.gz -P /opt
+RUN wget https://dist.apache.org/repos/dist/dev/hbase/hbase-1.4.1RC0/hbase-1.4.1-bin.tar.gz -P /opt
 RUN cd /opt && mkdir hbase && tar --strip-component=1 -zxvf hbase-${HBASE_VERSION}-bin.tar.gz -C hbase
 
 #Copy configuration file to cluster
