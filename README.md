@@ -7,7 +7,7 @@ Start all services via docker-compose.
 * JDK 1.8.0_162
 * CentOS 6.6
 * Hadoop 2.7.3
-* HBase 1.2.6
+* HBase 1.4.1
 
 ## How To Build Docker Images
 `docker-compose -f build-images.yml build`
